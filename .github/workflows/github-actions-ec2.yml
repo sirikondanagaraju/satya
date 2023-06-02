@@ -14,3 +14,8 @@ jobs:
     steps:
       - name: Checkout the files
         uses: actions/checkout@v2
+      - name: Run script file
+        run: |
+         chmod +x ./scripts/test.sh
+         ./scripts/test.sh
+        shell: bash  
